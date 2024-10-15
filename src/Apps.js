@@ -1,26 +1,31 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import Home from './Home';
-import Movie from './Movie';
-
+import logo from './logo.svg';
 import './App.css';
 
-const NotFound = () => {
-  return <h2>404 Not Found</h2>;
-}
+import product, { numbers } from './math.js'
+// we don't need sum function this time
 
-const App = () => {
+console.log(numbers.reduce(product));
+// 11250000
+
+function App() {
   return (
-    <Router>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <Link className="navbar-brand" to="/">Movie Finder</Link>
-      </nav>
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/movie/:id" component={Movie} />
-        <Route component={NotFound} />
-      </Switch>
-    </Router>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
 
