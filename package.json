@@ -2,6 +2,10 @@
   "name": "first-react-app",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "yarn": "3.8.1",
+    "node": "16.17.0"
+  },
   "dependencies": {
     "bootstrap": "^4.3.1",
     "react": "^16.8.6",
@@ -29,14 +33,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "packageManager": "yarn@3.8.1"
 }
-{
-  "name": "first-react-app",
-  "version": "0.1.0",
-+ "homepage": "https://altcademy.github.io/first-react-app/",
-  "private": true,
-  "scripts": {
-+ "deploy": "npm run build && gh-pages -d build",
-  "start": "react-scripts start",
-  "build": "react-scripts build",
