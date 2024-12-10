@@ -34,7 +34,7 @@
 {
   "name": "MovieFinder2",
   "version": "0.1.0",
-  "homepage": "https://altcademy.github.io/MovieFinder2/",
+  "homepage": "https://k1ngeric.github.io/MovieFinder2/",
   "private": true,
   "scripts": {
   "deploy": "npm run build && gh-pages -d build",
